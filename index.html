@@ -6,258 +6,256 @@
   <title>Lavoro Categorie Protette Torino · L.68/99</title>
   <meta name="description" content="Annunci di lavoro riservati alle Categorie Protette (L.68/99) a Torino e Piemonte. Aggiornamento automatico dal portale Piemonte Lavoro.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta name="color-scheme" content="light">
   <meta property="og:title" content="Lavoro Categorie Protette Torino · L.68/99">
   <meta property="og:description" content="Annunci di lavoro riservati alle Categorie Protette a Torino e Piemonte. Aggiornamento automatico.">
   <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --c-bg:        #000000;
-      --c-surface-0: #111111;
-      --c-surface-1: #161616;
-      --c-surface-2: #1e1e1e;
-      --c-border:    #242424;
-      --c-border-hi: #363636;
-      --c-text-1:    #f0f0f0;
-      --c-text-2:    #888888;
-      --c-text-3:    #4a4a4a;
-      --c-text-soft: #b5b0a4;
-      --c-accent:    #f5c400;
-      --c-accent-dk: #d4a900;
-      --c-accent-fg: #0c0c0c;
-      --c-ok:        #3d9970;
-      --c-tag-art1:  rgba(245,196,0,0.12);
-      --c-tag-art18: rgba(61,153,112,0.12);
-      --t-xs:   0.6875rem;
-      --t-sm:   0.8125rem;
+      --c-bg:        #f4f6f9;
+      --c-surface:   #ffffff;
+      --c-surface-2: #f0f3f7;
+      --c-border:    #e2e6ec;
+      --c-border-hi: #cbd2dc;
+      --c-text-1:    #15191f;
+      --c-text-2:    #5a6573;
+      --c-text-3:    #8a94a3;
+      --c-primary:   #1d4ed8;
+      --c-primary-dk:#1741b0;
+      --c-primary-bg:#eaf0ff;
+      --c-art1:      #1d4ed8;
+      --c-art1-bg:   #eaf0ff;
+      --c-art18:     #0f766e;
+      --c-art18-bg:  #e2f4f1;
+      --c-warn:      #b45309;
+      --c-warn-bg:   #fdf2e1;
+      --c-danger:    #b91c1c;
+      --c-danger-bg: #fdeaea;
+      --t-xs:   0.75rem;
+      --t-sm:   0.875rem;
       --t-base: 0.9375rem;
       --t-md:   1.0625rem;
       --t-lg:   1.25rem;
-      --t-xl:   1.625rem;
       --sp-1:  4px; --sp-2:  8px; --sp-3:  12px; --sp-4:  16px;
       --sp-5:  20px; --sp-6:  24px; --sp-8:  32px; --sp-10: 40px;
-      --sp-12: 48px; --sp-16: 64px;
-      --radius: 6px;
-      --max-w:  960px;
-      --font-ui: "Titillium Web", "Segoe UI", sans-serif;
-      --font-display: "Cormorant Garamond", Georgia, serif;
+      --radius: 10px;
+      --radius-sm: 7px;
+      --max-w:  1040px;
+      --shadow: 0 1px 2px rgba(16,24,40,0.04), 0 1px 3px rgba(16,24,40,0.06);
+      --shadow-hi: 0 4px 12px rgba(16,24,40,0.10);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
     body {
-      font-family: var(--font-ui);
+      font-family: var(--font);
       font-size: var(--t-base);
-      line-height: 1.6;
+      line-height: 1.55;
       color: var(--c-text-1);
       background: var(--c-bg);
       -webkit-font-smoothing: antialiased;
     }
-    a { color: var(--c-accent); text-decoration: none; }
-    a:hover { color: var(--c-accent-dk); }
-    a:focus-visible, button:focus-visible, input:focus-visible {
-      outline: 2px solid var(--c-accent); outline-offset: 3px;
+    a { color: var(--c-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 2px solid var(--c-primary); outline-offset: 2px;
     }
-    .wrap { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 var(--sp-6); }
-    .divider { border: none; border-top: 1px solid var(--c-border); margin: 0; }
-    .label {
-      font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--c-text-soft);
-    }
+    .wrap { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 var(--sp-5); }
 
     /* HEADER */
     .site-header {
+      background: var(--c-surface);
       border-bottom: 1px solid var(--c-border);
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(0,0,0,0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
     }
     .site-header__inner {
       display: flex; align-items: center; justify-content: space-between;
-      height: 56px; gap: var(--sp-4);
+      height: 60px; gap: var(--sp-4);
     }
-    .site-badge {
-      display: flex; align-items: center; gap: 10px;
-      color: var(--c-text-1); text-decoration: none;
-      font-family: Courier, monospace; font-size: 18px;
-    }
-    .mark-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--c-accent); flex-shrink: 0;
-    }
-    .badge-cursor { color: var(--c-accent); }
-    .header-back {
-      font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--c-text-3);
-      text-decoration: none;
-    }
-    .header-back:hover { color: var(--c-text-2); }
+    .brand { display: flex; align-items: center; gap: var(--sp-2); font-weight: 700; color: var(--c-text-1); }
+    .brand:hover { text-decoration: none; }
+    .brand__dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c-primary); }
+    .header-back { font-size: var(--t-sm); font-weight: 600; color: var(--c-text-2); }
+    .header-back:hover { color: var(--c-primary); }
 
     /* HERO */
-    .hero { padding: 48px 0 40px; }
-    .hero__eyebrow { margin-bottom: var(--sp-4); }
-    .hero__title {
-      font-family: var(--font-display);
-      font-size: clamp(2.8rem, 6vw, 4.2rem);
-      font-weight: 600; letter-spacing: -0.04em; line-height: 0.9;
-      color: var(--c-text-1); margin-bottom: var(--sp-5);
+    .hero { padding: var(--sp-10) 0 var(--sp-8); }
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: var(--sp-2);
+      font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--c-primary);
+      background: var(--c-primary-bg); padding: 5px 11px; border-radius: 999px;
+      margin-bottom: var(--sp-4);
     }
-    .hero__title em { color: var(--c-accent); font-style: normal; }
-    .hero__desc { font-size: var(--t-base); color: var(--c-text-2); max-width: 58ch; line-height: 1.75; }
+    .hero__title {
+      font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+      font-weight: 800; letter-spacing: -0.02em; line-height: 1.1;
+      color: var(--c-text-1); margin-bottom: var(--sp-3);
+    }
+    .hero__desc { font-size: var(--t-md); color: var(--c-text-2); max-width: 62ch; }
     .hero__meta {
       margin-top: var(--sp-5); display: flex; align-items: center;
-      gap: var(--sp-5); flex-wrap: wrap;
+      gap: var(--sp-2) var(--sp-5); flex-wrap: wrap;
+      font-size: var(--t-sm); color: var(--c-text-3);
     }
-    .hero__updated {
-      font-size: var(--t-xs); color: var(--c-text-3);
-      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-    }
-    .hero__count {
-      font-size: var(--t-xs); color: var(--c-text-3);
-      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-    }
+    .hero__meta strong { color: var(--c-text-1); font-weight: 700; }
 
-    /* FILTRI */
-    .filters { padding: 24px 0; }
-    .filters__inner {
-      display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap;
+    /* FILTER BAR */
+    .toolbar {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(244,246,249,0.92);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--c-border);
+      padding: var(--sp-3) 0;
     }
-    .filter-search {
-      flex: 1; min-width: 200px;
-      padding: 8px 12px;
-      background: var(--c-surface-1); border: 1px solid var(--c-border);
+    .toolbar__inner { display: flex; flex-direction: column; gap: var(--sp-3); }
+    .toolbar__row { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; }
+
+    .search-wrap { position: relative; flex: 1; min-width: 240px; display: flex; }
+    .search-icon {
+      position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      width: 18px; height: 18px; color: var(--c-text-3); pointer-events: none;
+    }
+    .search-input {
+      flex: 1; width: 100%;
+      padding: 11px 38px 11px 38px;
+      background: var(--c-surface); border: 1px solid var(--c-border);
       border-radius: var(--radius); color: var(--c-text-1);
-      font-family: inherit; font-size: var(--t-sm);
+      font-family: inherit; font-size: var(--t-base); box-shadow: var(--shadow);
     }
-    .filter-search::placeholder { color: var(--c-text-3); }
-    .filter-search:focus { outline: none; border-color: var(--c-accent); }
-    .filter-group { display: flex; gap: var(--sp-2); }
-    .filter-btn {
-      padding: 7px 13px; font-size: var(--t-xs); font-weight: 700;
-      font-family: inherit; letter-spacing: 0.06em; text-transform: uppercase;
-      border-radius: var(--radius); border: 1px solid var(--c-border);
-      background: transparent; color: var(--c-text-2); cursor: pointer;
-      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    .search-input::placeholder { color: var(--c-text-3); }
+    .search-input:focus { outline: none; border-color: var(--c-primary); box-shadow: 0 0 0 3px var(--c-primary-bg); }
+    .search-input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+    .search-clear {
+      position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+      width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
+      border: none; border-radius: 50%; background: var(--c-surface-2);
+      color: var(--c-text-2); font-size: 16px; line-height: 1; cursor: pointer;
     }
-    .filter-btn:hover { background: var(--c-surface-2); color: var(--c-text-1); }
-    .filter-btn.active {
-      background: var(--c-accent); border-color: var(--c-accent);
-      color: var(--c-accent-fg);
+    .search-clear:hover { background: var(--c-border-hi); color: var(--c-text-1); }
+
+    .sort-wrap { display: flex; align-items: center; gap: var(--sp-2); margin-left: auto; }
+    .sort-label { font-size: var(--t-sm); font-weight: 600; color: var(--c-text-2); }
+    .sort-select {
+      padding: 9px 30px 9px 12px; font-size: var(--t-sm); font-weight: 600;
+      font-family: inherit; color: var(--c-text-1); background: var(--c-surface);
+      border: 1px solid var(--c-border); border-radius: var(--radius);
+      cursor: pointer; appearance: none; box-shadow: var(--shadow);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5L6 6.5l5-5' stroke='%235a6573' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 11px center;
     }
+    .sort-select:focus { outline: none; border-color: var(--c-primary); }
+
+    .chips { display: flex; gap: var(--sp-2); flex-wrap: wrap; align-items: center; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 7px 14px; font-size: var(--t-sm); font-weight: 600;
+      font-family: inherit; border-radius: 999px;
+      border: 1px solid var(--c-border); background: var(--c-surface);
+      color: var(--c-text-2); cursor: pointer; box-shadow: var(--shadow);
+      transition: border-color 0.12s, color 0.12s, background 0.12s;
+    }
+    .chip:hover { border-color: var(--c-border-hi); color: var(--c-text-1); }
+    .chip.active { background: var(--c-primary); border-color: var(--c-primary); color: #fff; }
+    .chip__count { font-weight: 700; font-variant-numeric: tabular-nums; opacity: 0.7; }
+    .chip.active .chip__count { opacity: 0.85; }
     .results-count {
-      font-size: var(--t-xs); color: var(--c-text-3);
-      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-      margin-left: auto;
+      margin-left: auto; font-size: var(--t-sm); color: var(--c-text-2); font-weight: 600;
     }
 
-    /* JOBS LIST */
-    .jobs { padding: 0 0 80px; }
-    .jobs-list {
-      display: grid; gap: 1px;
-      background: var(--c-border);
-      border: 1px solid var(--c-border);
-      border-radius: var(--radius); overflow: hidden;
-    }
+    /* JOBS */
+    .jobs { padding: var(--sp-6) 0 var(--sp-10); }
+    .jobs-list { display: grid; gap: var(--sp-3); }
     .job-card {
-      background: var(--c-surface-0);
-      padding: 22px 24px 24px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: var(--sp-2) var(--sp-6);
+      background: var(--c-surface); border: 1px solid var(--c-border);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: var(--sp-5); display: grid;
+      grid-template-columns: 1fr auto; gap: var(--sp-4);
       align-items: start;
-      transition: background 0.15s;
+      transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s;
     }
-    .job-card:hover { background: var(--c-surface-1); }
-    .job-card__main { display: flex; flex-direction: column; gap: var(--sp-2); }
-    .job-card__tags { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
-    .job-tag {
-      font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; padding: 3px 8px;
-      border-radius: calc(var(--radius) / 2);
-    }
-    .job-tag--art1  { background: var(--c-tag-art1);  color: var(--c-accent); border: 1px solid rgba(245,196,0,0.25); }
-    .job-tag--art18 { background: var(--c-tag-art18); color: var(--c-ok);     border: 1px solid rgba(61,153,112,0.25); }
-    .job-tag--plain {
-      background: var(--c-surface-2); color: var(--c-text-3);
-      border: 1px solid var(--c-border);
-    }
+    .job-card:hover { border-color: var(--c-border-hi); box-shadow: var(--shadow-hi); }
+    .job-card__main { min-width: 0; }
     .job-card__title {
-      font-family: var(--font-display);
-      font-size: 1.55rem; font-weight: 600; line-height: 1;
-      color: var(--c-text-1);
+      font-size: var(--t-lg); font-weight: 700; line-height: 1.25;
+      color: var(--c-text-1); margin-bottom: var(--sp-2);
     }
     .job-card__title a { color: inherit; }
-    .job-card__title a:hover { color: var(--c-accent); }
+    .job-card__title a:hover { color: var(--c-primary); text-decoration: none; }
     .job-card__meta {
-      display: flex; gap: var(--sp-4); flex-wrap: wrap;
-      font-size: var(--t-sm); color: var(--c-text-2);
+      display: flex; gap: var(--sp-2) var(--sp-4); flex-wrap: wrap;
+      font-size: var(--t-sm); color: var(--c-text-2); margin-bottom: var(--sp-3);
     }
-    .job-card__meta-item { display: flex; align-items: center; gap: 5px; }
+    .meta-item { display: inline-flex; align-items: center; gap: 6px; }
+    .meta-item svg { width: 15px; height: 15px; color: var(--c-text-3); flex-shrink: 0; }
+    .job-card__tags { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+    .tag {
+      font-size: var(--t-xs); font-weight: 700; letter-spacing: 0.01em;
+      padding: 4px 9px; border-radius: var(--radius-sm);
+      background: var(--c-surface-2); color: var(--c-text-2);
+    }
+    .tag--art1  { background: var(--c-art1-bg);  color: var(--c-art1); }
+    .tag--art18 { background: var(--c-art18-bg); color: var(--c-art18); }
+
     .job-card__side {
       display: flex; flex-direction: column; align-items: flex-end;
-      gap: var(--sp-2); padding-top: 2px;
+      gap: var(--sp-3); white-space: nowrap;
     }
-    .job-card__date { font-size: var(--t-xs); color: var(--c-text-3); white-space: nowrap; }
+    .deadline {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: var(--t-xs); font-weight: 700; padding: 4px 10px;
+      border-radius: 999px; background: var(--c-surface-2); color: var(--c-text-2);
+    }
+    .deadline--soon { background: var(--c-warn-bg); color: var(--c-warn); }
+    .deadline--past { background: var(--c-danger-bg); color: var(--c-danger); }
     .job-card__btn {
-      display: inline-flex; align-items: center; gap: var(--sp-1);
-      padding: 6px 12px; font-size: var(--t-xs); font-weight: 700;
-      font-family: inherit; letter-spacing: 0.06em; text-transform: uppercase;
-      border-radius: var(--radius); border: 1px solid var(--c-border);
-      background: transparent; color: var(--c-text-1);
-      text-decoration: none; white-space: nowrap;
-      transition: background 0.15s, border-color 0.15s;
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 18px; font-size: var(--t-sm); font-weight: 700;
+      font-family: inherit; border-radius: var(--radius);
+      background: var(--c-primary); color: #fff; text-decoration: none;
+      transition: background 0.12s;
     }
-    .job-card__btn:hover {
-      background: var(--c-accent); border-color: var(--c-accent);
-      color: var(--c-accent-fg);
-    }
+    .job-card__btn:hover { background: var(--c-primary-dk); text-decoration: none; }
+    .job-card__btn svg { width: 15px; height: 15px; }
+
     .empty-state {
-      padding: 48px 24px; text-align: center;
-      color: var(--c-text-3); font-size: var(--t-sm);
+      padding: var(--sp-10) var(--sp-5); text-align: center;
+      color: var(--c-text-2); font-size: var(--t-md);
+      background: var(--c-surface); border: 1px dashed var(--c-border);
+      border-radius: var(--radius);
     }
 
-    /* INFO PANEL */
-    .info { padding: 32px 0; }
-    .info-panel {
-      border: 1px solid var(--c-border); border-radius: var(--radius);
-      padding: 24px 26px; display: grid;
-      grid-template-columns: 1fr 1fr; gap: var(--sp-6);
-      background: linear-gradient(180deg,rgba(255,255,255,0.015),rgba(255,255,255,0.005));
+    /* INFO */
+    .info { padding: var(--sp-8) 0; }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
+    .info-card {
+      background: var(--c-surface); border: 1px solid var(--c-border);
+      border-radius: var(--radius); padding: var(--sp-5); box-shadow: var(--shadow);
     }
-    .info-block__title {
-      font-family: var(--font-display); font-size: 1.4rem; color: var(--c-accent);
-      margin-bottom: var(--sp-3); line-height: 1;
+    .info-card__title {
+      font-size: var(--t-md); font-weight: 700; color: var(--c-text-1);
+      margin-bottom: var(--sp-3);
     }
-    .info-block__body { font-size: var(--t-sm); color: var(--c-text-2); line-height: 1.8; }
-    .info-block__body a { color: var(--c-text-soft); }
+    .info-card__body { font-size: var(--t-sm); color: var(--c-text-2); line-height: 1.7; }
 
     /* FOOTER */
-    .site-footer { border-top: 1px solid var(--c-border); padding: var(--sp-6) 0; }
+    .site-footer { border-top: 1px solid var(--c-border); background: var(--c-surface); padding: var(--sp-6) 0; }
     .site-footer__inner {
-      display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4);
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--sp-3); flex-wrap: wrap;
+      font-size: var(--t-sm); color: var(--c-text-3);
     }
-    .site-footer__copy { font-size: var(--t-sm); color: var(--c-text-3); }
-    .site-footer__copy a { color: var(--c-text-3); }
+    .site-footer__inner a { color: var(--c-text-2); }
 
     /* RESPONSIVE */
-    @media (max-width: 767px) {
-      :root { --sp-6: 16px; }
-      .hero { padding: 32px 0 28px; }
-      .info-panel { grid-template-columns: 1fr; }
+    @media (max-width: 720px) {
+      .hero { padding: var(--sp-6) 0; }
       .job-card { grid-template-columns: 1fr; }
-      .job-card__side { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
-      .results-count { margin-left: 0; width: 100%; }
-      .site-footer__inner { flex-direction: column; align-items: flex-start; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-      }
+      .job-card__side { align-items: flex-start; flex-direction: row; flex-wrap: wrap; width: 100%; }
+      .job-card__btn { flex: 1; justify-content: center; }
+      .sort-wrap { margin-left: 0; }
+      .results-count { margin-left: 0; }
+      .info-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -266,9 +264,9 @@
   <header class="site-header">
     <div class="wrap">
       <div class="site-header__inner">
-        <a class="site-badge" href="https://tongatron.org/" aria-label="Tongatron homepage">
-          <span class="mark-dot" aria-hidden="true"></span>
-          <span>tongatron.org<span class="badge-cursor">_</span></span>
+        <a class="brand" href="https://tongatron.org/">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span>Categorie Protette Torino</span>
         </a>
         <a class="header-back" href="https://tongatron.org/">← tongatron.org</a>
       </div>
@@ -279,42 +277,44 @@
 
     <section class="hero">
       <div class="wrap">
-        <div class="hero__eyebrow">
-          <span class="label">Piemonte Lavoro · L.68/99</span>
-        </div>
-        <h1 class="hero__title">
-          Lavoro<br>
-          <em>Categorie Protette</em><br>
-          Torino
-        </h1>
+        <span class="hero__eyebrow">Piemonte Lavoro · L.68/99</span>
+        <h1 class="hero__title">Annunci di lavoro per Categorie Protette a Torino</h1>
         <p class="hero__desc">
-          Annunci di lavoro riservati alle Categorie Protette (Legge 68/99) a Torino e Piemonte.
-          Aggiornamento automatico dal portale <a href="https://www.piemontelavoro.it/" target="_blank" rel="noopener">Piemonte Lavoro</a>.
+          Offerte riservate alle Categorie Protette (Legge 68/99), raccolte automaticamente dal portale
+          <a href="https://www.piemontelavoro.it/" target="_blank" rel="noopener">Piemonte Lavoro</a>.
         </p>
         <div class="hero__meta">
-          <span class="hero__updated" id="last-updated"></span>
-          <span class="hero__count" id="total-count"></span>
+          <span><strong id="total-count">0</strong> annunci disponibili</span>
+          <span id="last-updated"></span>
         </div>
       </div>
     </section>
 
-    <hr class="divider">
-
-    <section class="filters" aria-label="Filtri annunci">
+    <section class="toolbar" aria-label="Filtri annunci">
       <div class="wrap">
-        <div class="filters__inner">
-          <input
-            type="search" id="search-input"
-            class="filter-search"
-            placeholder="Cerca per titolo, azienda, sede…"
-            aria-label="Cerca annunci"
-          >
-          <div class="filter-group" role="group" aria-label="Filtra per categoria">
-            <button class="filter-btn active" data-filter="all">Tutti</button>
-            <button class="filter-btn" data-filter="art1">Art. 1 (disabilità)</button>
-            <button class="filter-btn" data-filter="art18">Art. 18</button>
+        <div class="toolbar__inner">
+          <div class="toolbar__row">
+            <div class="search-wrap">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input type="search" id="search-input" class="search-input" placeholder="Cerca per titolo, azienda, sede o settore…" aria-label="Cerca annunci">
+              <button type="button" id="search-clear" class="search-clear" aria-label="Cancella ricerca" hidden>×</button>
+            </div>
+            <div class="sort-wrap">
+              <label class="sort-label" for="sort-select">Ordina</label>
+              <select id="sort-select" class="sort-select" aria-label="Ordina annunci">
+                <option value="recent">Più recenti</option>
+                <option value="deadline">In scadenza</option>
+              </select>
+            </div>
           </div>
-          <span class="results-count" id="results-count" aria-live="polite"></span>
+          <div class="toolbar__row">
+            <div class="chips" role="group" aria-label="Filtra per categoria">
+              <button class="chip active" data-filter="all">Tutti <span class="chip__count" data-count="all"></span></button>
+              <button class="chip" data-filter="art1">Art. 1 · Disabilità <span class="chip__count" data-count="art1"></span></button>
+              <button class="chip" data-filter="art18">Art. 18 <span class="chip__count" data-count="art18"></span></button>
+            </div>
+            <span class="results-count" id="results-count" aria-live="polite"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -325,28 +325,26 @@
       </div>
     </section>
 
-    <hr class="divider">
-
     <section class="info" aria-label="Informazioni">
       <div class="wrap">
-        <div class="info-panel">
-          <div class="info-block">
-            <h2 class="info-block__title">Cos'è la L.68/99</h2>
-            <p class="info-block__body">
+        <div class="info-grid">
+          <div class="info-card">
+            <h2 class="info-card__title">Cos'è la Legge 68/99</h2>
+            <p class="info-card__body">
               La Legge 68/99 tutela il diritto al lavoro delle persone con disabilità e delle categorie protette.
-              L'<strong>Art. 1</strong> riguarda persone con invalidità civile, sordi, ciechi, invalidi del lavoro e di guerra.
+              L'<strong>Art. 1</strong> riguarda invalidi civili, sordi, ciechi, invalidi del lavoro e di guerra.
               L'<strong>Art. 18</strong> comprende orfani, vedove, profughi e altre categorie.
               Le aziende con più di 15 dipendenti sono obbligate ad assumere quote di categorie protette.
             </p>
           </div>
-          <div class="info-block">
-            <h2 class="info-block__title">Fonte e aggiornamenti</h2>
-            <p class="info-block__body">
+          <div class="info-card">
+            <h2 class="info-card__title">Fonte e aggiornamenti</h2>
+            <p class="info-card__body">
               I dati provengono dal portale ufficiale
               <a href="https://www.piemontelavoro.it/" target="_blank" rel="noopener">Piemonte Lavoro</a>
               e vengono aggiornati automaticamente più volte al giorno.
-              Per segnalazioni o contatti: <a href="mailto:giovanni.bindi@tongatron.org">giovanni.bindi@tongatron.org</a>.<br><br>
-              Progetto open source — <a href="https://github.com/tongatron/6899torino" target="_blank" rel="noopener">github.com/tongatron/6899torino</a>.
+              Per segnalazioni: <a href="mailto:giovanni.bindi@tongatron.org">giovanni.bindi@tongatron.org</a>.
+              Progetto open source su <a href="https://github.com/tongatron/6899torino" target="_blank" rel="noopener">GitHub</a>.
             </p>
           </div>
         </div>
@@ -358,18 +356,24 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="site-footer__inner">
-        <p class="site-footer__copy">
-          Dati da <a href="https://www.piemontelavoro.it/" target="_blank" rel="noopener">piemontelavoro.it</a>
-          · Progetto <a href="https://tongatron.org/">Tongatron</a>
-        </p>
-        <p class="site-footer__copy" id="footer-date"></p>
+        <span>Dati da <a href="https://www.piemontelavoro.it/" target="_blank" rel="noopener">piemontelavoro.it</a> · Progetto <a href="https://tongatron.org/">Tongatron</a></span>
+        <span id="footer-date"></span>
       </div>
     </div>
   </footer>
 
   <script>
     const JOBS = [{"id": "3378", "titolo": "AIUTO CUOCO/A ART. 1 L. 68/99 ", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-26T16:48:24.729+02:00", "scadenza": "2026-06-25T16:52:25.543+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "LAVORO A TURNI", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3295", "titolo": "ADD. SERVIZI GENERALI DI CUCINA L. 68/99 ART.1", "pubblicato_da": "", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-05-22T13:03:25.377+02:00", "scadenza": "2026-06-21T19:13:24.700+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3286", "titolo": "ADDETTO/A FRONT OFFICE E CENTRALINO ART.1 L68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-22T12:09:36.124+02:00", "scadenza": "2026-06-26T18:38:01.040+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3197", "titolo": "ADDETTO/A AI SERVIZI DI PULIZIA - ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-20T10:11:41.942+02:00", "scadenza": "2026-06-20T16:51:39.611+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3117", "titolo": "ADDETTO FRONT/OFFICE CATEGORIE PROTETTE (L.68/99) ", "pubblicato_da": "CEMEDI SRL", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-18T12:56:49.883+02:00", "scadenza": "2026-06-18T15:16:50.866+02:00", "settore": "Case di Cura", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3114", "titolo": "OPERAIO/A ADDETTO/A PULIZIE E/O FACCHINAGGIO", "pubblicato_da": "MASTER TEAM S.R.L.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-18T12:08:32.015+02:00", "scadenza": "2026-06-20T10:01:09.301+02:00", "settore": "Servizi", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "3024", "titolo": "ADDETTO/A CALL CENTER - ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-05-13T13:44:48.521+02:00", "scadenza": "2026-06-12T16:22:57.721+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2997", "titolo": "ADDETTO/A ALLE VENDITE ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-05-12T16:30:34.128+02:00", "scadenza": "2026-06-13T16:45:05.508+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "LAVORO A TURNI", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2926", "titolo": "1 IMPIEGATO/A CONTABILE L.68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-08T08:03:09.457+02:00", "scadenza": "2026-06-07T08:16:11.084+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2921", "titolo": "SISTEMISTA IT ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-07T15:49:07.286+02:00", "scadenza": "2026-06-10T14:47:56.502+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "QUALSIASI MODALITA'", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2914", "titolo": "IMPIEGATA/O AMMINISTRATIVA/O ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-07T14:54:34.677+02:00", "scadenza": "2026-06-13T15:16:23.623+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2837", "titolo": "ADD. VENDITA TELEFONICA E SERVIZIO CLIENTI L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-05T11:11:53.747+02:00", "scadenza": "2026-06-04T11:30:54.836+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2835", "titolo": "AMMINISTRATIVO/A BACK OFFICE ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-05-05T11:01:48.142+02:00", "scadenza": "2026-06-04T11:09:32.754+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2804", "titolo": "IMPIEGATO/A ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-30T18:01:21.833+02:00", "scadenza": "2026-06-05T14:00:00.000+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2725", "titolo": "INGEGNERI ESPERTI NEL SETTORE AUTOMOTIVE L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "5", "sede": "TORINO", "pubblicato_a": "2026-04-28T15:11:27.469+02:00", "scadenza": "2026-05-29T15:16:03.233+02:00", "settore": "Metalmeccanica", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2694", "titolo": "ASSISTENTE ALLA STRUTTURA EDUCATIVA ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "4", "sede": "TORINO", "pubblicato_a": "2026-04-27T18:00:24.313+02:00", "scadenza": "2026-07-04T16:00:00.000+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2681", "titolo": "ACCOUNTING&OPERATIONS ASSISTANT ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-27T14:06:22.546+02:00", "scadenza": "2026-06-28T14:00:00.000+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2494", "titolo": "1 RECEPTIONIST ART.1 L.68/99", "pubblicato_da": "", "posizioni_aperte": "8", "sede": "TORINO", "pubblicato_a": "2026-04-20T08:24:44.950+02:00", "scadenza": "2026-05-20T08:35:26.183+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2430", "titolo": "ADD. PULIZIE - ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-15T16:48:12.520+02:00", "scadenza": "2026-05-15T16:56:14.963+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2423", "titolo": "ADDETTO/A PULIZIE - L 68/99 ART.1", "pubblicato_da": "RISORGIMENTO S.R.L.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-15T15:33:30.142+02:00", "scadenza": "2026-05-15T17:15:44.992+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2342", "titolo": "UN/A ADDETTO/A ALLA CONTABILITÀ ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-13T11:35:32.197+02:00", "scadenza": "2026-05-13T11:49:36.549+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2330", "titolo": "SALESFORCE DEVELOPER", "pubblicato_da": "TENENIGEN SRL", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-10T17:51:09.493+02:00", "scadenza": "2026-05-13T15:43:41.300+02:00", "settore": "Metalmeccanica", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "QUALSIASI MODALITA'", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2323", "titolo": "UN/A ADDETTO/A AI SERVIZI GENERALI ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-10T11:36:19.662+02:00", "scadenza": "2026-05-10T11:48:45.895+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2268", "titolo": "IMPIEGATO/A ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-08T17:18:05.290+02:00", "scadenza": "2026-05-13T15:21:47.141+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2249", "titolo": "1 JUNIOR DEVELOPER  ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-08T11:20:38.851+02:00", "scadenza": "2026-06-10T22:00:00.000+02:00", "settore": "Metalmeccanica", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "QUALSIASI MODALITA'", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2242", "titolo": "SALES ASSISTANT - ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-07T16:48:28.086+02:00", "scadenza": "2026-05-13T12:51:32.122+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2240", "titolo": "ADD. PULIZIE - ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-07T14:46:59.786+02:00", "scadenza": "2026-05-07T15:05:33.439+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2172", "titolo": "ADDETTO/A PULIZIE ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-04-01T16:26:04.770+02:00", "scadenza": "2026-06-01T14:00:00.000+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2120", "titolo": "BACKOFFICE ASSISTANT", "pubblicato_da": "TORINO", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-03-31T13:56:34.403+02:00", "scadenza": "2026-05-03T09:39:32.621+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2105", "titolo": "IMPIEGATO/A FRONT/BACK OFFICE ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "25", "sede": "TORINO", "pubblicato_a": "2026-03-31T10:12:30.271+02:00", "scadenza": "2026-06-06T11:47:10.229+02:00", "settore": "Servizi sanitari", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "2010", "titolo": "UN/A AIUTO CUOCO/A ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-26T11:28:50.693+01:00", "scadenza": "2026-04-25T11:39:43.667+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1853", "titolo": "AD. ALLE PULIZIE ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-19T15:26:35.338+01:00", "scadenza": "2026-04-18T15:42:12.582+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1818", "titolo": "AD. AL LAVAGGIO STOVIGLIE ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-18T14:47:29.336+01:00", "scadenza": "2026-04-18T15:48:32.709+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1724", "titolo": "1 ADDETTO/A PULIZIE ART.1 L.68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-13T08:26:51.991+01:00", "scadenza": "2026-04-12T12:37:21.808+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1663", "titolo": "ADDETTO/A ALLE PULIZIE ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-11T09:30:43.432+01:00", "scadenza": "2026-04-30T14:00:00.000+02:00", "settore": "Servizi", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1401", "titolo": "IMPIEGATO FRONT OFFICE/BACK OFFICE SANITARIO - CUP", "pubblicato_da": "COOPERATIVA SOCIALE ASSO SOCIETA' COOPERATIVA", "posizioni_aperte": "4", "sede": "TORINO", "pubblicato_a": "2026-03-03T09:13:53.959+01:00", "scadenza": "2026-04-08T14:00:07.997+02:00", "settore": "Servizi sanitari", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1359", "titolo": "SEGRETERIA DI DIREZIONE - L.68/99 CAT. PROTETTE", "pubblicato_da": "ABILE JOB S.R.L.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-03-02T11:09:44.572+01:00", "scadenza": "2026-04-09T11:14:12.799+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1351", "titolo": "RICERCA PROGRAMMATORE WEB", "pubblicato_da": "CGM CONSULTING S.R.L.", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-03-02T08:46:20.779+01:00", "scadenza": "2026-05-10T08:31:58.240+02:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1344", "titolo": "PROGRAMMATORE WEB ART. 1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-02-27T13:34:54.119+01:00", "scadenza": "2026-05-27T12:01:22.110+02:00", "settore": "Commercio", "tipo_rapporto": "APPRENDISTATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1200", "titolo": "TIROCINANTE ARCHITETTO / A – ART.1 L.68/99", "pubblicato_da": "RISORSE S.P.A.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-23T17:41:29.064+01:00", "scadenza": "2026-03-28T15:59:53.336+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1199", "titolo": "ARCHITETTO / A – CATEGORIA PROTETTA (L. 68/99)", "pubblicato_da": "RISORSE S.P.A.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-23T17:37:45.508+01:00", "scadenza": "2026-03-28T15:59:20.273+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "1176", "titolo": "SEGRETARIO/A DI DIREZIONE ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-02-23T12:22:36.881+01:00", "scadenza": "2026-04-28T14:00:00.000+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "991", "titolo": "INFORMATICO ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-16T12:03:14.030+01:00", "scadenza": "2026-03-18T12:16:35.460+01:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "986", "titolo": "UN/A CONTABILE - ART. 1 L. 68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-16T11:28:25.894+01:00", "scadenza": "2026-03-18T11:51:25.174+01:00", "settore": "Commercio", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "973", "titolo": "IMPIEGATO/A CONTABILE - L. 68/99", "pubblicato_da": "RISORGIMENTO S.R.L.", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-13T15:33:18.519+01:00", "scadenza": "2026-05-15T11:31:48.000+02:00", "settore": "Turismo", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "QUALSIASI MODALITA'", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "952", "titolo": "CUSTOMER SERVICE E PURCHASING ART 1 L.68/99", "pubblicato_da": "", "posizioni_aperte": "2", "sede": "TORINO", "pubblicato_a": "2026-02-12T19:03:49.428+01:00", "scadenza": "2026-05-24T09:16:08.771+02:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "897", "titolo": "CENTRALINISTA POLIAMBULATORIO - ART. 1 L.68/99 ", "pubblicato_da": "LAVORIAMOCI S.R.L. IMPRESA SOCIALE", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-11T14:35:45.318+01:00", "scadenza": "2026-03-14T13:52:10.339+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "858", "titolo": "SCAFFALISTA NOTTURNO/A|ART.1 L.68/99 - ZONA CUNEO", "pubblicato_da": "LAVORIAMOCI S.R.L. IMPRESA SOCIALE", "posizioni_aperte": "6", "sede": "TORINO", "pubblicato_a": "2026-02-10T13:09:13.101+01:00", "scadenza": "2026-03-13T11:07:17.461+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "849", "titolo": "ASSITENTE AMMINISTRATIVO/A ART.1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-10T09:52:39.536+01:00", "scadenza": "2026-04-12T14:00:00.000+02:00", "settore": "Metalmeccanica", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "799", "titolo": "SCAFFALISTA NOTTURNO - ART.1 L.68/99 CAT.PROTETTE", "pubblicato_da": "LAVORIAMOCI S.R.L. IMPRESA SOCIALE", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-02-06T18:54:25.881+01:00", "scadenza": "2026-03-11T10:18:13.810+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "453", "titolo": "AD. SEGRETERIA AMMINISTRATIVA ART.M 1 L.68/99", "pubblicato_da": "TORINO", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-01-26T15:18:10.111+01:00", "scadenza": "2026-02-11T13:00:00.000+01:00", "settore": "Metalmeccanica", "tipo_rapporto": "LAVORO A TEMPO DETERMINATO", "modalita": "PART TIME", "flg_art1": true, "flg_art18": false, "link": ""}, {"id": "341", "titolo": "DIGITAL RISK OPERATOR - ART. 1 L. 68/99", "pubblicato_da": "", "posizioni_aperte": "1", "sede": "TORINO", "pubblicato_a": "2026-01-22T15:46:09.697+01:00", "scadenza": "2026-03-15T13:00:00.000+01:00", "settore": "", "tipo_rapporto": "LAVORO A TEMPO INDETERMINATO", "modalita": "FULL TIME", "flg_art1": true, "flg_art18": false, "link": ""}];
-    const UPDATED = "04/06/2026 18:53 UTC";
+    const UPDATED = "07/06/2026 00:07 UTC";
+
+    const ICON = {
+      building: '<svg viewBox="0 0 24 24" fill="none"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 21V9h4a1 1 0 0 1 1 1v11M3 21h18M7 8h2M7 12h2M7 16h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+      pin: '<svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>',
+      sector: '<svg viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.6"/></svg>',
+      users: '<svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 20a6 6 0 0 1 12 0M16 5.5a3 3 0 0 1 0 5M21 20a6 6 0 0 0-4-5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+      ext: '<svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      clock: '<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+    };
 
     function formatDate(iso) {
       if (!iso) return "";
@@ -382,91 +386,161 @@
       return (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
     }
 
+    function metaItem(icon, text) {
+      return `<span class="meta-item">${ICON[icon]}${escHtml(text)}</span>`;
+    }
+
+    function deadlineBadge(iso) {
+      if (!iso) return "";
+      const d = new Date(iso);
+      if (isNaN(d)) return "";
+      const days = Math.ceil((d - Date.now()) / 86400000);
+      let cls = "deadline", txt = "Scade il " + formatDate(iso);
+      if (days < 0) { cls += " deadline--past"; txt = "Scaduto"; }
+      else if (days === 0) { cls += " deadline--soon"; txt = "Scade oggi"; }
+      else if (days === 1) { cls += " deadline--soon"; txt = "Scade domani"; }
+      else if (days <= 7) { cls += " deadline--soon"; txt = "Scade tra " + days + " giorni"; }
+      return `<span class="${cls}">${ICON.clock}${txt}</span>`;
+    }
+
     function renderCard(j) {
       const tags = [];
-      if (j.flg_art1)  tags.push('<span class="job-tag job-tag--art1">Art. 1 L.68/99</span>');
-      if (j.flg_art18) tags.push('<span class="job-tag job-tag--art18">Art. 18 L.68/99</span>');
-      if (j.tipo_rapporto) tags.push(`<span class="job-tag job-tag--plain">${escHtml(j.tipo_rapporto)}</span>`);
-      if (j.modalita) tags.push(`<span class="job-tag job-tag--plain">${escHtml(j.modalita)}</span>`);
+      if (j.flg_art1)  tags.push('<span class="tag tag--art1">Art. 1 · L.68/99</span>');
+      if (j.flg_art18) tags.push('<span class="tag tag--art18">Art. 18 · L.68/99</span>');
+      if (j.tipo_rapporto) tags.push(`<span class="tag">${escHtml(j.tipo_rapporto)}</span>`);
+      if (j.modalita)      tags.push(`<span class="tag">${escHtml(j.modalita)}</span>`);
 
       const meta = [];
-      if (j.pubblicato_da) meta.push(`<span class="job-card__meta-item">${escHtml(j.pubblicato_da)}</span>`);
-      if (j.sede)          meta.push(`<span class="job-card__meta-item">📍 ${escHtml(j.sede)}</span>`);
-      if (j.settore)       meta.push(`<span class="job-card__meta-item">${escHtml(j.settore)}</span>`);
+      if (j.pubblicato_da) meta.push(metaItem("building", j.pubblicato_da));
+      if (j.sede && j.sede.toLowerCase() !== (j.pubblicato_da || "").toLowerCase())
+        meta.push(metaItem("pin", j.sede));
+      else if (j.sede && !j.pubblicato_da)
+        meta.push(metaItem("pin", j.sede));
+      if (j.settore) meta.push(metaItem("sector", j.settore));
       if (j.posizioni_aperte && j.posizioni_aperte !== "1")
-        meta.push(`<span class="job-card__meta-item">${escHtml(j.posizioni_aperte)} posizioni</span>`);
+        meta.push(metaItem("users", j.posizioni_aperte + " posizioni"));
 
       const href = j.link || `https://pslp.regione.piemonte.it/pslpwcl/pslpfcweb/consulta-annunci/visualizza-annuncio-profili-ric;idAnnuncio=${j.id}`;
 
       return `
-      <article class="job-card" role="listitem"
-        data-art1="${j.flg_art1 ? '1' : '0'}"
-        data-art18="${j.flg_art18 ? '1' : '0'}"
-        data-text="${escHtml((j.titolo + ' ' + j.pubblicato_da + ' ' + j.sede + ' ' + j.settore).toLowerCase())}">
+      <article class="job-card" role="listitem">
         <div class="job-card__main">
-          <div class="job-card__tags">${tags.join('')}</div>
           <h2 class="job-card__title"><a href="${escHtml(href)}" target="_blank" rel="noopener">${escHtml(j.titolo)}</a></h2>
-          <div class="job-card__meta">${meta.join('')}</div>
+          <div class="job-card__meta">${meta.join("")}</div>
+          <div class="job-card__tags">${tags.join("")}</div>
         </div>
         <div class="job-card__side">
-          <span class="job-card__date">${j.scadenza ? 'Scade ' + formatDate(j.scadenza) : (j.pubblicato_a ? formatDate(j.pubblicato_a) : '')}</span>
-          <a class="job-card__btn" href="${escHtml(href)}" target="_blank" rel="noopener">Vai all'annuncio ↗</a>
+          ${deadlineBadge(j.scadenza)}
+          <a class="job-card__btn" href="${escHtml(href)}" target="_blank" rel="noopener">Vai all'annuncio ${ICON.ext}</a>
         </div>
       </article>`;
     }
 
     const list = document.getElementById("jobs-list");
     const searchInput = document.getElementById("search-input");
-    const filterBtns = document.querySelectorAll(".filter-btn");
+    const searchClear = document.getElementById("search-clear");
+    const filterBtns = document.querySelectorAll(".chip");
+    const sortSelect = document.getElementById("sort-select");
     const resultsCount = document.getElementById("results-count");
+    const countEls = {
+      all:   document.querySelector('.chip__count[data-count="all"]'),
+      art1:  document.querySelector('.chip__count[data-count="art1"]'),
+      art18: document.querySelector('.chip__count[data-count="art18"]'),
+    };
 
-    let activeFilter = "all";
-    let searchTerm = "";
+    const state = { filter: "all", q: "", sort: "recent" };
 
-    function applyFilters() {
-      const cards = list.querySelectorAll(".job-card");
-      let visible = 0;
-      cards.forEach(card => {
-        const matchFilter =
-          activeFilter === "all" ||
-          (activeFilter === "art1"  && card.dataset.art1  === "1") ||
-          (activeFilter === "art18" && card.dataset.art18 === "1");
-        const matchSearch = !searchTerm || card.dataset.text.includes(searchTerm);
-        const show = matchFilter && matchSearch;
-        card.style.display = show ? "" : "none";
-        if (show) visible++;
+    function matchesSearch(j, q) {
+      if (!q) return true;
+      return (j.titolo + " " + j.pubblicato_da + " " + j.sede + " " + j.settore)
+        .toLowerCase().includes(q);
+    }
+    function matchesFilter(j, f) {
+      return f === "all" || (f === "art1" && j.flg_art1) || (f === "art18" && j.flg_art18);
+    }
+    function sortJobs(arr, sort) {
+      if (sort !== "deadline") return arr;  // "recent" = ordine DB (pubblicato_a DESC)
+      return arr.slice().sort((a, b) => {
+        const da = a.scadenza ? Date.parse(a.scadenza) : Infinity;
+        const db = b.scadenza ? Date.parse(b.scadenza) : Infinity;
+        return da - db;
       });
-      resultsCount.textContent = visible + " annunci";
-      const empty = list.querySelector(".empty-state");
-      if (empty) empty.style.display = visible === 0 ? "" : "none";
+    }
+
+    function syncURL() {
+      const p = new URLSearchParams();
+      if (state.filter !== "all") p.set("cat", state.filter);
+      if (state.q) p.set("q", state.q);
+      if (state.sort !== "recent") p.set("sort", state.sort);
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    }
+
+    function readURL() {
+      const p = new URLSearchParams(location.search);
+      const cat = p.get("cat");
+      if (cat === "art1" || cat === "art18") state.filter = cat;
+      const q = p.get("q");
+      if (q) state.q = q.toLowerCase();
+      if (p.get("sort") === "deadline") state.sort = "deadline";
+    }
+
+    function render() {
+      const searchSet = JOBS.filter(j => matchesSearch(j, state.q));
+      countEls.all.textContent   = "(" + searchSet.length + ")";
+      countEls.art1.textContent  = "(" + searchSet.filter(j => j.flg_art1).length + ")";
+      countEls.art18.textContent = "(" + searchSet.filter(j => j.flg_art18).length + ")";
+
+      let visible = sortJobs(searchSet.filter(j => matchesFilter(j, state.filter)), state.sort);
+
+      if (visible.length === 0) {
+        list.innerHTML = '<p class="empty-state">' +
+          (state.q || state.filter !== "all"
+            ? "Nessun annuncio corrisponde ai filtri selezionati."
+            : "Nessun annuncio disponibile al momento. Riprova più tardi.") + "</p>";
+      } else {
+        list.innerHTML = visible.map(renderCard).join("");
+      }
+      resultsCount.textContent = visible.length + (visible.length === 1 ? " annuncio" : " annunci");
+      searchClear.hidden = !state.q;
+      syncURL();
     }
 
     filterBtns.forEach(btn => {
       btn.addEventListener("click", () => {
-        filterBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        activeFilter = btn.dataset.filter;
-        applyFilters();
+        filterBtns.forEach(b => b.classList.toggle("active", b === btn));
+        state.filter = btn.dataset.filter;
+        render();
       });
     });
 
     searchInput.addEventListener("input", () => {
-      searchTerm = searchInput.value.trim().toLowerCase();
-      applyFilters();
+      state.q = searchInput.value.trim().toLowerCase();
+      render();
     });
 
-    // Render
-    if (JOBS.length === 0) {
-      list.innerHTML = '<p class="empty-state">Nessun annuncio disponibile. Riprova più tardi.</p>';
-    } else {
-      list.innerHTML = JOBS.map(renderCard).join("") +
-        '<p class="empty-state" style="display:none">Nessun risultato per questa ricerca.</p>';
-    }
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      state.q = "";
+      searchInput.focus();
+      render();
+    });
 
-    document.getElementById("last-updated").textContent = "Aggiornato: " + UPDATED;
-    document.getElementById("total-count").textContent = JOBS.length + " annunci totali";
-    document.getElementById("footer-date").textContent = "Aggiornato " + UPDATED;
-    document.getElementById("results-count").textContent = JOBS.length + " annunci";
+    sortSelect.addEventListener("change", () => {
+      state.sort = sortSelect.value;
+      render();
+    });
+
+    // Init dallo stato URL
+    readURL();
+    searchInput.value = state.q;
+    sortSelect.value = state.sort;
+    filterBtns.forEach(b => b.classList.toggle("active", b.dataset.filter === state.filter));
+    render();
+
+    document.getElementById("last-updated").textContent = "Aggiornato il " + UPDATED;
+    document.getElementById("total-count").textContent = JOBS.length;
+    document.getElementById("footer-date").textContent = "Aggiornato il " + UPDATED;
   </script>
 
 </body>
